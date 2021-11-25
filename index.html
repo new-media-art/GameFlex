@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameFlex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+       <header id="header">
+         <div id="next-back-buttons">
+           
+           <button id="button-back">BACK</button>
+           <h1>GameFlex</h1>
+           <button id="button-next">NEXT</button>
+          </div>
+        </header>
+        
+        <p>Press the correct button to put the red circle <br> on top of the blue circle:</p>
+        
+        <main class="flex-container">
+            <div id="screen" class="flex-container-screen">
+                
+              <div id="position-relative">
+                <div id="position-absolute"> 
+                  <div id="circle-red"></div>
+                  <div id="circle-blue"></div> 
+                </div>
+              </div>
+            </div>
+          <p id="CSS-declaration-block">#move {<br>display:  flex;<br>______________<br> } </p>
+          <button onclick="redRight()">justify-content: flex-end;</button>
+          <button onclick="wrong()">justify-content: center;</button>  
+          <button onclick="wrong()">justify-content: flex-start;</button>
+        </main>
+
+
+
+
+<script src="main.js"></script>  
+</body>
+<footer>
+    <p>u.f. wien 2021</p>
+</footer>
+</html>
