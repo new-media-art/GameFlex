@@ -9,18 +9,15 @@
 </head>
 <body>
    
-       <header id="header">
-         <div id="next-back-buttons">
-           
-           <button id="button-back">BACK</button>
-           <h1>GameFlex</h1>
-           <button id="button-next">NEXT</button>
-          </div>
-        </header>
+        <div class="flex-container-header">
+          <div><button class="next">BACK</button></div>
+          <div>GameFlex</div>
+          <div><button class="next">NEXT</button></div>  
+        </div>
         
-        <p>Press the correct button to put the red circle <br> on top of the blue circle:</p>
+        <p id="instructions">Press the correct button to put the red circle <br> on top of the blue circle:</p>
         
-        <main class="flex-container">
+        <div class="flex-container">
             <div id="screen" class="flex-container-screen">
                 
               <div id="position-relative">
@@ -34,14 +31,12 @@
           <button onclick="redRight()">justify-content: flex-end;</button>
           <button onclick="wrong()">justify-content: center;</button>  
           <button onclick="wrong()">justify-content: flex-start;</button>
-        </main>
-
-
-
+          <p id="footer">u.f. wien 2021</p>
+        </div>
 
 <script src="main.js"></script>  
 </body>
-<footer>
-    <p>u.f. wien 2021</p>
-</footer>
+
+    
+
 </html>
